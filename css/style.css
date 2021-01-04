@@ -1,5 +1,6 @@
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
+.item2 { grid-area: menu;
+min-width: 150px; }
 .item3 { grid-area: main; }
 .item4 { grid-area: footer; }
 .grid-container {
