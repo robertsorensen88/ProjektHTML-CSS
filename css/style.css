@@ -8,7 +8,7 @@ body{
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
-    
+    opacity: 1;
     color: rgb(34, 19, 2);
     background-color: rgb(255, 255, 255);
     
@@ -44,7 +44,10 @@ body{
     '. . main main . .'
     '. footer footer footer footer .';
   grid-gap: 5px;
-  background-color: #643f14;
+  background-image: url(/Backgrundimg/bg3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
   padding: 10px;
 }
 .grid-container > div {
@@ -112,15 +115,7 @@ article span {
 }
 
 /*** Shop***/
-#BG-img{
-  position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height:auto;
-    z-index: -1;
-    opacity: 0.5;
-}
+
 .gallery{ 
  border-style: dashed ;
  padding: 2px;
