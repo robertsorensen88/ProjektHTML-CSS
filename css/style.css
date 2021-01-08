@@ -31,7 +31,6 @@ body{
   margin-right: auto;
   margin-left: auto;
   min-width: 150px; 
-
 }
 .item4 { 
   grid-area: footer; 
@@ -48,40 +47,11 @@ body{
   background-color: #643f14;
   padding: 10px;
 }
-
-
 .grid-container > div {
     background-color: rgb(255, 237, 230);
     text-align: center;
     padding: 10px 0;
     border-radius: 20px;
-}
-
-
-.right_art, .left_art{
-  margin: 15px;
-}
-.right_art h3, .left_art h3{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.right_art  {
-  text-align: right;
-}
-.left_art  {
-  text-align: left;
-}
-.Float_right{
-    float: right;
-    margin: 0 0 5px 5px;
-}
-.Float_left{
-    float: left;
-    margin: 0  5px  5px 0;
-}
-.clr {
-    clear:both;
 }
 .menu {
     text-decoration: none;
@@ -91,7 +61,55 @@ body{
 .menu:hover {
     color: brown;
 }
-
+/*** Start***/
+.navi{
+  grid-area: navigation;
+  padding:20px;
+  border: 2px solid #9e6d34;
+  border-style: inset;
+}
+.text{
+  grid-area: main;
+  padding: 20px;
+  border: 2px solid #9e6d34;
+  border-style: inset;
+}
+.heads{
+  grid-area: header;
+}
+.main-container {
+  display: grid;
+  grid-template-areas:
+    '. . . header .'
+    '. navigation . main .'
+    '. . . main .';
+    grid-gap: 5px;
+}
+.mainitem ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+a.wide{
+  display: block;
+}
+li a {
+  margin: 3px;
+  border: 1px solid;
+  border-style: collapse;
+  color: black;
+  text-decoration: none;
+}
+.navi a:hover,
+.navi a:active {
+  border: 1px solid black;
+  color: white;
+  background-color: #9e6d34;
+}
+article span {
+  font-size: 20px;
+}
 
 /*** Shop***/
 #BG-img{
@@ -112,7 +130,11 @@ body{
 }
 
 .item3{
-  
+  grid-area: main; 
+  max-width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 150px; 
 
 }
 
