@@ -42,7 +42,7 @@ body{
   grid-template-areas:
     '. header header header header .'
     '. . menu menu . .'
-    '. main main main main .'
+    '. . main main . .'
     '. footer footer footer footer .';
   grid-gap: 5px;
   background-color: #643f14;
@@ -111,6 +111,11 @@ body{
 
 }
 
+.item3{
+  
+
+}
+
 section{
   width: 85%;
   margin: 0 auto;
@@ -121,12 +126,14 @@ article img{
   max-width: 500px;
 
 }
+article h2{
+  color: #643f14;
+
+}
 
 .buy-btn{
   
   color: rgb(0, 0, 0);
-  
- 
   
 }
 
