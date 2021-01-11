@@ -27,6 +27,8 @@ body{
   display: flex;
   background-color: rgb(255, 237, 230);
   border-radius: 20px;
+  position: sticky;
+  top: 0;
   
   
 }
@@ -103,8 +105,7 @@ a.wide{
 .navi a:hover,
 .navi a:active {
   border: 1px solid black;
-  color: white;
-  background-color: #9e6d34;
+  background-color: white;
 }
 article span {
   font-size: 20px;
