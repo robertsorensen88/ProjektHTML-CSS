@@ -2,50 +2,88 @@
 <html lang="sv">
     <head>
         <title>Kontakt</title>
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <!-- FONT AWESOME, IKONER-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body class="grid-container">
         <div class="item1">
             <h1>Kontakta oss</h1>
         </div>
-        <div class="item2">
-            <a class="menu" href="/index.html">Hem</a>
-            <a class="menu" href="/shop.html">Shop</a>
-            <a class="menu" href="/omoss.html">Om Oss</a>
-            <a class="menu" href="/kontakt.html">Kontakt</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light item2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                        <a class="nav-link active" href="omoss.html">Om oss</a>
+                        <a class="nav-link active" href="kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="item3">
             <section id="contact">
-                <form action="mailto:test.com" method="post" enctype="text/plain">
-                    <label for="firstname">Förnamn</label>
-                    <input type="text" name="firstname" id="firstname" autofocus required>
-                    <label for="lastname">Efternamn</label>
-                    <input type="text" name="lastname" id="lastname" required>
-                    <label for="phone">Telefonnummer</label>
-                    <input type="text" name="phone" id="phone" required>
-                    <label for="subject">Rubrik</label>
-                    <input type="text" name="subject" id="subject" required>
-                    <label for="message" name="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                    <input type="submit" value="Skicka" class="submit">
+                <form action="mailto:test.com" method="post" enctype="text/plain" class="">
+                    <input type="text" name="firstname" id="firstname" class="form-control-lg" placeholder="Förnamn" autofocus required>
+                    <input type="text" name="lastname" id="lastname" class="form-control-lg" placeholder="Efternamn"required>
+                    <input type="text" name="phone" id="phone" class="form-control-lg" placeholder="Telefonnummer" required>
+                    <input type="text" name="subject" id="subject" class="form-control-lg" placeholder="Rubrik" required>     
+                    <label for="message" class="form-label">Skriv ditt meddelande</label>   
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>   
+                    <button type="submit" class="btn btn-dark">Skicka</button> 
                 </form>
                 <article class="contact-article">
-                    <header id="article-header">
-                        <h1>Kontakta oss</h1>
-                    </header>
-                    <p class="article-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, laborum expedita ullam ipsam unde recusandae quisquam eos atque tempora obcaecati voluptate vitae sit nulla a aut, exercitationem dolores laudantium repudiandae voluptates. In, numquam aliquam sunt sed fuga facilis nobis tempore repellat consequuntur veniam, enim deleniti sapiente quia quasi atque facere?</p>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Kontakta oss</h5>
+                          <p class="card-text">Har du frågor angående några av våra hundar och är intresserad av att köpa en hund av oss, tveka inte med att kontakta oss!</p>
+                        </div>
+                        <img src="Hundar/Hund 2.jpg" class="card-img-bottom" alt="...">
+                      </div>
                 </article>
+                
             </section>
         </div> 
         <footer class="item4 main-footer">
-            <p>Email: <a href="mailto:test.com">Test@gmail.com</a></p>
-            <p>Telefon: <a href="tel:000000000">0737 00 00 00</a></p>
-            <address>
-                Besökskontor:<br>
-                Testvägen 557<br>
-                47393, TestLand<br>
-                Sverige
-            </address>
+            <div class="card footer-card">
+                <div class="card-body">
+                  <h5 class="card-title">Snabblänkar</h5>
+                  <p class="card-text">Kontakta oss här eller eller fyll i formuläret på kontaktsidan.</p>
+                  <a href="mailto:test.com" class="btn btn-dark">Maila oss</a>
+                  <a href="tel:000000000" class="btn btn-dark">Ring oss</a>    
+                </div>
+            </div>
+            <div class="card footer-card" >
+                <div class="card-body">
+                  <h5 class="card-title">Besökstider:<br> Vardagar: 10.00 - 15.00</h5>
+                  <address>
+                    Besökskontor:<br>
+                    Testvägen 557<br>
+                    47393, TestLand<br>
+                    Sverige
+                  </address>   
+                </div>
+            </div>
+            <div class="card footer-card" >
+                <div class="card-body">
+                  <h5 class="card-title">Sociala Medier</h5>
+                  <p class="card-text">Följ oss på våra sociala medier för alla senaste uppdateringar kring våra hundar och valpar som finns på gården</p>
+                  <i class="fab fa-facebook-square" alt="länk till testgårdens facebook"></i>
+                  <i class="fab fa-twitter-square" alt="länk till testgårdens twitter"></i>
+                  <i class="fab fa-instagram-square" alt="länk till testgårdens instagram"></i>
+                </div>
+            </div>
         </footer>     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
     </body>
 </html>
