@@ -1,7 +1,9 @@
 html{
     height: 100%;
 }
-
+* {
+  box-sizing: border-box;
+}
 body{
     padding:0;
     margin: 0;
@@ -22,15 +24,18 @@ body{
 
 .item2 { 
   grid-area: menu;
-  min-width: 150px; 
+  display: flex;
+  background-color: rgb(255, 237, 230);
+  border-radius: 20px;
+  
   
 }
 .item3 { 
   grid-area: main; 
-  max-width: 85%;
+  width: 85%;
   margin-right: auto;
   margin-left: auto;
-  min-width: 150px; 
+  
 }
 .item4 { 
   grid-area: footer; 
@@ -40,7 +45,7 @@ body{
   display: grid;
   grid-template-areas:
     '. header header header header .'
-    '. . menu menu . .'
+    '. menu menu menu . .'
     '. . main main . .'
     '. footer footer footer footer .';
   grid-gap: 5px;
@@ -56,48 +61,39 @@ body{
     padding: 10px 0;
     border-radius: 20px;
 }
-.menu {
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-}
-.menu:hover {
-    color: brown;
+.navbar-nav a:hover {
+  background-color: white;
 }
 /*** Start***/
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+}
 .navi{
   grid-area: navigation;
+  flex: 25%;
   padding:20px;
+  margin: 15px;
   border: 2px solid #9e6d34;
   border-style: inset;
+  min-width: 240px;
 }
 .text{
   grid-area: main;
+  flex: 60%;
   padding: 20px;
+  margin: 15px;
   border: 2px solid #9e6d34;
   border-style: inset;
 }
 .heads{
   grid-area: header;
 }
-.main-container {
-  display: grid;
-  grid-template-areas:
-    '. . . header .'
-    '. navigation . main .'
-    '. . . main .';
-    grid-gap: 5px;
-}
-.mainitem ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
-}
+
 a.wide{
   display: block;
 }
-li a {
+.navi a {
   margin: 3px;
   border: 1px solid;
   border-style: collapse;
@@ -124,14 +120,7 @@ article span {
 
 }
 
-.item3{
-  grid-area: main; 
-  max-width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-  min-width: 150px; 
 
-}
 
 section{
   width: 85%;
@@ -211,7 +200,18 @@ footer.main-footer{
 
 /* För telefoner */
 @media screen and (max-width: 480px) {
-
+  .grid-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .main-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
 
 }
 
