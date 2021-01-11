@@ -227,7 +227,7 @@ footer.main-footer{
   .grid-container{
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
   }
   .main-container{
     display: flex;
