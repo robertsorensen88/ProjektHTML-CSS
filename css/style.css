@@ -41,6 +41,7 @@ body{
 }
 .item4 { 
   grid-area: footer; 
+  
 }
 
 .grid-container {
@@ -223,6 +224,8 @@ footer .footer-card{
   border: none;
   height: 90%;
   width: 30%;
+  
+  
 }
 
 
@@ -297,8 +300,7 @@ footer i {
  padding: 1px;
  border-color: rgb(110, 79, 43);
  border-width: 4px;
- 
- 
+  max-width: 20rem;
  
 }
 .imgs1 {
@@ -316,6 +318,7 @@ footer i {
   padding: 2px;
   border-color: rgb(110, 79, 43);
   border-width: 5px;
+  min-width: 35%;
   
 }
 
@@ -327,4 +330,9 @@ footer i {
   margin-left: auto;
   min-width: 100%;
 }
-
+.pmargin{
+  padding: 5px;
+  margin: auto;
+  max-width: 75%;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+}
