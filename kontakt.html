@@ -2,32 +2,30 @@
 <html lang="sv">
     <head>
         <title>Kontakt</title>
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body class="grid-container">
         <div class="item1">
             <h1>Kontakta oss</h1>
         </div>
         <div class="item2">
-            <a class="menu" href="/index.html">Hem</a>
-            <a class="menu" href="/shop.html">Shop</a>
-            <a class="menu" href="/omoss.html">Om Oss</a>
-            <a class="menu" href="/kontakt.html">Kontakt</a>
+            <a class="menu" href="index.html">Hem</a>
+            <a class="menu" href="shop.html">Shop</a>
+            <a class="menu" href="omoss.html">Om Oss</a>
+            <a class="menu" href="kontakt.html">Kontakt</a>
         </div>
         <div class="item3">
             <section id="contact">
-                <form action="mailto:test.com" method="post" enctype="text/plain">
-                    <label for="firstname">Förnamn</label>
-                    <input type="text" name="firstname" id="firstname" autofocus required>
-                    <label for="lastname">Efternamn</label>
-                    <input type="text" name="lastname" id="lastname" required>
-                    <label for="phone">Telefonnummer</label>
-                    <input type="text" name="phone" id="phone" required>
-                    <label for="subject">Rubrik</label>
-                    <input type="text" name="subject" id="subject" required>
-                    <label for="message" name="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                    <input type="submit" value="Skicka" class="submit">
+                <form action="mailto:test.com" method="post" enctype="text/plain" class="">
+                    <input type="text" name="firstname" id="firstname" class="form-control-lg" placeholder="Förnamn" autofocus required>
+                    <input type="text" name="lastname" id="lastname" class="form-control-lg" placeholder="Efternamn"required>
+                    <input type="text" name="phone" id="phone" class="form-control-lg" placeholder="Telefonnummer" required>
+                    <input type="text" name="subject" id="subject" class="form-control-lg" placeholder="Rubrik" required>     
+                    <label for="message" class="form-label">Skriv ditt meddelande</label>   
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>   
+                    <button type="submit" class="btn btn-dark">Skicka</button> 
                 </form>
                 <article class="contact-article">
                     <header id="article-header">
