@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,24 +12,37 @@
         <div class="item1">
             <h1>Kim</h1>
         </div>
-        <div class="item2">
-            <a class="menu" href="index.html">Hem</a>
-            <a class="menu" href="shop.html">Shop</a>
-            <a class="menu" href="omoss.html">Om Oss</a>
-            <a class="menu" href="kontakt.html">Kontakt</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light item2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Meny</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Hem</a>
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                        <a class="nav-link active" href="omoss.html">Om oss</a>
+                        <a class="nav-link active" href="kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="item3">
             <article >            
                 <h3>Kim</h3>
                 <img src="img/kim.jpg" class="imgs2" alt="">
-                <p>Jag heter Kim och är 35 år gammal. </p>
+                <p class="pmargin">Jag heter Kim och är 35 år gammal. Jag och min fru Jeanette bor på gården och driver verksamheten ihop. Till skillnad från min fru Jeanette så ligger mitt intresse i jordbruket och naturen snarare än i hundarna.
+                    Men självklart finns jag där och stöttar upp när det behövs. Jag brukar ofta behövas en del när det är nya valpar.
+                </p>
             </article>
             <div class="clr"></div>
             <article >
                 <h3 >Hobbies</h3>
                 <img class="imgs2" src="img/kimfiske.jpg" alt="">
                 <img class="imgs2" src="img/Kossor.jpg" alt="" >
-                <p>Två av mina största intressen är fiske och att ta hand om våra djur här på gården.</p>
+                <p class="pmargin">Två av mina största intressen är fiske och att ta hand om våra djur här på gården. Det finns ingenting som slår att få andas in frisk luft i lungorna.</p>
             </article>
         </div>
         <footer class="item4 main-footer">
@@ -41,5 +55,8 @@
                 Sverige
             </address>
         </footer>     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
         </body>
         </html>

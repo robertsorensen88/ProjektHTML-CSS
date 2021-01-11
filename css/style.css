@@ -309,4 +309,9 @@ footer.main-footer{
   margin-left: auto;
   min-width: 100%;
 }
-
+.pmargin{
+  padding: 5px;
+  margin: auto;
+  max-width: 75%;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+}
