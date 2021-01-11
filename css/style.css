@@ -199,6 +199,10 @@ article h2{
   resize: none;
 }
 
+#contact button {
+  margin-top: 0.5em;
+}
+
 
 
 /****** FOOTER ******/
