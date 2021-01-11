@@ -112,6 +112,27 @@ article span {
 }
 
 /*** Shop***/
+.Grid_Container {
+  display: grid;
+  grid-template-areas:
+    '. header header header header .'
+    '. menu menu menu . .'
+    '. . main main . .'
+    '. footer footer footer footer .';
+  grid-gap: 5px;
+  background-image: url(/Backgrundimg/bg3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  
+  padding: 10px;
+}
+
+.Grid_Container > div {
+  background-color: rgba(255, 237, 230, 0.87);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 20px;
+}
 
 .gallery{ 
  border-style: dashed ;
@@ -121,8 +142,6 @@ article span {
 
 }
 
-
-
 section{
   width: 85%;
   margin: 0 auto;
@@ -131,8 +150,11 @@ section{
 article img{
   width: 35%;
   max-width: 500px;
-
+  opacity: 1.0 ;
+  
 }
+
+
 article h2{
   color: #643f14;
 
@@ -143,6 +165,7 @@ article h2{
   color: rgb(0, 0, 0);
   
 }
+
 
 
 
