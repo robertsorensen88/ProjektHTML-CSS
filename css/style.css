@@ -111,6 +111,11 @@ a.wide{
 article span {
   font-size: 20px;
 }
+iframe {
+  width: 100%;
+  min-width: 400px;
+  height: 400px;
+}
 
 /*** Shop***/
 .Grid_Container {
@@ -220,11 +225,7 @@ footer .footer-card{
   border: none;
   height: 90%;
   width: 30%;
-  
-  
 }
-
-
 footer i {
   font-size: 2em;
   margin-right: 0.5em;
@@ -243,7 +244,6 @@ footer i {
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-    
   }
 
 }
@@ -285,10 +285,6 @@ footer i {
   padding-top: 15px;
   padding-bottom: 15px;
   max-width: 100%;
-  
-  
-  
-  
 }
 
 .card {
