@@ -78,6 +78,7 @@ body{
   padding:20px;
   margin: 15px;
   border: 2px solid #9e6d34;
+  border-radius: 20px;
   border-style: inset;
   min-width: 240px;
 }
@@ -86,6 +87,7 @@ body{
   flex: 60%;
   padding: 20px;
   margin: 15px;
+  border-radius: 20px;
   border: 2px solid #9e6d34;
   border-style: inset;
 }
@@ -110,6 +112,9 @@ a.wide{
 }
 article span {
   font-size: 20px;
+}
+article p {
+  text-align: left;
 }
 iframe {
   width: 100%;
