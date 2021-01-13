@@ -30,8 +30,8 @@ body{
   border-radius: 20px;
   position: sticky;
   top: 0;
- background: rgba(255,237,230,0.9);
-background: radial-gradient(circle, rgba(255,237,230,0.9) 0%, rgba(255,255,255,0.9) 100%);
+ background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,237,230,1) 66%, rgba(255,237,230,1) 92%);
   
 }
 .item3 { 
@@ -69,8 +69,8 @@ background: radial-gradient(circle, rgba(255,237,230,0.9) 0%, rgba(255,255,255,0
      background: radial-gradient(circle, rgba(255,237,230,0.9) 0%, rgba(255,255,255,0.9) 100%);
 }
 .navbar-nav a:hover {
-    background: rgba(255,237,230,0.9);
-    background: radial-gradient(circle, rgba(255,237,230,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    background: rgba(255,255,255, 0.9);
+background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,237,230,0.9) 66%, rgba(255,237,230,0.9) 92%);
 }
 /*** Start***/
 .main-container{
@@ -113,8 +113,8 @@ a.wide{
 .navi a:hover,
 .navi a:active {
   border: 1px solid black;
-  background: rgba(255,237,230,0.9);
-  background: radial-gradient(circle, rgba(255,237,230,0.9) 0%, rgba(255,255,255,0.9) 100%);
+  background: rgba(255,255,255, 0.9);
+background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,237,230,0.9) 66%, rgba(255,237,230,0.9) 92%);
 }
 article span {
   font-size: 20px;
@@ -207,8 +207,8 @@ footer.main-footer{
   justify-content: space-between;
   align-items: flex-start;
   
-  background: rgba(255,237,230,0.9);
-  background: radial-gradient(circle, rgba(255,237,230,0.9) 0%, rgba(255,255,255,0.9) 100%);
+  background: rgba(255,255,255, 0.9);
+background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,237,230,0.9) 66%, rgba(255,237,230,0.9) 92%);
   border-radius: 20px;
   margin: 0 auto;
 }
