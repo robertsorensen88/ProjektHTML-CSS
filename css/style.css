@@ -25,7 +25,7 @@ body{
 .item2 { 
   grid-area: menu;
   display: flex;
-  background-color: rgb(255, 237, 230);
+  background-color: rgba(255, 237, 230, 0.89);
   border-radius: 20px;
   position: sticky;
   top: 0;
@@ -55,11 +55,10 @@ body{
   background-image: url(/Backgrundimg/bg3.jpg);
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.9;
   padding: 10px;
 }
 .grid-container > div {
-    background-color: rgb(255, 237, 230);
+    background-color: rgba(255, 237, 230, 0.9);
     text-align: center;
     padding: 10px 0;
     border-radius: 20px;
@@ -78,6 +77,7 @@ body{
   padding:20px;
   margin: 15px;
   border: 2px solid #9e6d34;
+  border-radius: 20px;
   border-style: inset;
   min-width: 240px;
 }
@@ -86,6 +86,7 @@ body{
   flex: 60%;
   padding: 20px;
   margin: 15px;
+  border-radius: 20px;
   border: 2px solid #9e6d34;
   border-style: inset;
 }
@@ -111,29 +112,16 @@ a.wide{
 article span {
   font-size: 20px;
 }
+.index p {
+  text-align: left;
+}
+iframe {
+  width: 100%;
+  min-width: 400px;
+  height: 400px;
+}
 
 /*** Shop***/
-.Grid_Container {
-  display: grid;
-  grid-template-areas:
-    '. header header header header .'
-    '. menu menu menu . .'
-    '. . main main . .'
-    '. footer footer footer footer .';
-  grid-gap: 5px;
-  background-image: url(/Backgrundimg/bg3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  
-  padding: 10px;
-}
-
-.Grid_Container > div {
-  background-color: rgba(255, 237, 230, 0.87);
-  text-align: center;
-  padding: 10px 0;
-  border-radius: 20px;
-}
 
 .gallery{ 
  border-style: dashed ;
@@ -224,11 +212,7 @@ footer .footer-card{
   border: none;
   height: 90%;
   width: 30%;
-  
-  
 }
-
-
 footer i {
   font-size: 2em;
   margin-right: 0.5em;
@@ -247,7 +231,6 @@ footer i {
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
-    
   }
 
 }
@@ -289,10 +272,6 @@ footer i {
   padding-top: 15px;
   padding-bottom: 15px;
   max-width: 100%;
-  
-  
-  
-  
 }
 
 .card {
