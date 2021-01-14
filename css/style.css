@@ -109,13 +109,15 @@ a.wide{
   padding: 20px;
   margin: 20px;
   border: 1px solid;
-  border-style: collapse;
+  border-radius: 20px;
   color: black;
+  font-weight: bolder;
   text-decoration: none;
 }
 .navi a:hover,
 .navi a:active {
   border: 1px solid black;
+  border-radius: 20px;
   background: rgba(255,255,255, 0.9);
 background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,237,230,0.9) 66%, rgba(255,237,230,0.9) 92%);
 }
