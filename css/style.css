@@ -177,6 +177,14 @@ article h2{
   
 }
 
+.item3_img{
+  width: 35%;
+  max-width: 500px;
+  border-style: dashed ;
+ padding: 2px;
+ border-color: rgb(110, 79, 43);
+ border-width: 5px;
+}
 
 
 
