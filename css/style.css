@@ -36,6 +36,7 @@ body{
   top: 0;
   background: rgba(255,255,255, 0.8);
   background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,237,230,0.8) 66%, rgba(255,237,230,0.8) 92%);
+  z-index: 1;
 }
 .item3 { 
   grid-area: main; 
@@ -134,6 +135,7 @@ article span {
   height: 250px;
   margin: 10px;
   padding: 10px;
+  border-radius: 20px;
 }
 iframe {
   width: 100%;
@@ -206,6 +208,10 @@ article h2{
 #contact textarea{
   width: 100%;
   resize: none;
+}
+
+#contact button {
+  margin-top: 0.5em;
 }
 
 
